@@ -7,6 +7,7 @@
   padding-top: 3vh;
 }
 .nav-item {
+  color: darkslategrey;
   margin-left: 3vw;
 }
 
@@ -26,7 +27,12 @@
 }
 
 .bookmark-container-left {
+  margin-top: 6vh;
   width: 40%;
+}
+
+.bookmark-img {
+  width: 400px;
 }
 
 .feature-container {
@@ -41,6 +47,11 @@
   flex-direction: row;
   margin-bottom: 6vh;
   margin-left: 10vw;
+}
+
+.bookmark-oneclick-img {
+  margin-right: 3vw;
+  width: 400px;
 }
 
 .bookmark-oneclick-right {
