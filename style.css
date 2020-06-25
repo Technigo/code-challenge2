@@ -11,20 +11,40 @@ p {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding-bottom: 3vh;
+  padding-bottom: 8vh;
   padding-left: 3vw;
-  padding-right: 3vw;
-  padding-top: 3vh;
+  padding-right: 5vw;
+  padding-top: 6vh;
 }
 
 
 /* Bookmark */
+.bookmark-btn {
+  background: white;
+  border: none;
+  border-radius: 4px;
+  box-shadow: 1px 2px gainsboro;
+  padding: 8px;
+}
+
+.bookmark-btn:active {
+  background: mediumslateblue;
+  color: white;
+  cursor: pointer;
+}
+.bookmark-btn:hover {
+  background: mediumslateblue;
+  color: white;
+  cursor: pointer;
+}
+
 .bookmark-container-left {
   align-items: center;
   display: flex;
   flex-direction: column;
   margin-left: 3vw;
   margin-right: 3vw;
+  width: 90%;
 }
 
 .bookmark-img {
@@ -39,6 +59,9 @@ p {
 
 .bookmark-text {
   color: gray;
+  padding-bottom: 3vh;
+  text-align: center;
+  width: 80%;
 }
 
 .bookmark-title {
@@ -47,9 +70,19 @@ p {
 }
 
 /* Features */
-.fetature-btn-container{
+.feature-btn {
+  background: white;
+  border: none;
+  border-radius: 4px;
+  box-shadow: 1px 2px gainsboro;
+  margin-bottom: 1vh;
+  padding: 12px;
+}
+
+.fetature-btn-container {
   display: flex;
   flex-direction: column;
+  width: 90%;
 }
 
 .feature-container {
@@ -64,14 +97,20 @@ p {
 
 .feature-text {
   color: gray;
+  margin-left: 6vw;
+  margin-right: 6vw;
+  padding-bottom: 3vh;
+  text-align: center;
 }
 
 .feature-title {
   font-size: 26px;
+  margin-bottom: 1vh;
 }
 
 /* Bookmark oneclick */
 .bookmark-oneclick-btn {
+  border-radius: 4px;
   display: none;
 }
 
@@ -87,6 +126,13 @@ p {
   width: 90%;
 }
 
+.bookmark-oneclick-right {
+  margin-bottom: 8vh;
+  margin-left: 8vw;
+  margin-right: 10vw;
+  margin-top: 6vh;
+}
+
 .bookmark-oneclick-title {
   font-size: 26px;
 }
@@ -94,8 +140,10 @@ p {
 /* Download */
 .download-btn {
   background: mediumslateblue;
+  border-radius: 4px;
   color: white;
   font-size: 16px;
+  padding: 10px;
 }
 
 .download-container {
@@ -106,8 +154,29 @@ p {
   text-align: center;
 }
 
-.download-container-item-one, .download-container-item-two, .download-container-item-three{
-  padding-bottom: 12vh;
+.download-container-item-one, .download-container-item-two, .download-container-item-three {
+  box-shadow: 1px 2px gainsboro;
+  margin-bottom: 12vh;
+  margin-left: 10vw;
+  margin-right: 10vw;
+  margin-top: 4vh;
+  padding-bottom: 8vh;
+}
+
+.download-img-dots {
+  padding-bottom: 2vh;
+}
+
+.download-item-title {
+  font-size: 20px;
+  font-weight: bold;
+  padding-top: 3vh;
+}
+
+.download-text {
+  margin-bottom: 10vh;
+  margin-left: 10vw;
+  margin-right: 10vw;
 }
 
 .download-title {
@@ -126,38 +195,59 @@ p {
   width: 85vw;
 }
 
-.accordion h1{
+.accordion h1 {
   text-align: center;
   color: white;
 }
 
 .accordion-btn {
-  background: white;
-  cursor: pointer;
-  /* border-block-end-style: groove; */
-  border-width: thin;
-  text-align: left;
-  outline: none;
-  font-size: 16px;
-  width: 100%;
-  display: flex;
   align-items: flex-start;
-  padding-left: 0px;
-  padding-bottom: 10px;
+  background: white;
+  border-radius: 4px;
+  border-width: thin;
+  cursor: pointer;
+  display: flex;
   font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  /* border-block-end-style: groove; */
+  outline: none;
+  padding-bottom: 10px;
+  padding-left: 0;
+  text-align: left;
+  width: 100%;
+}
+
+.accordion-btn-arrow {
+  margin-left: auto;
+  padding-top: 1vh;
 }
 
 .accordion-moreinfo-btn {
   align-self: center;
   background: mediumslateblue;
+  border-radius: 4px;
   color: white;
+  cursor: pointer;
   font-size: 16px;
   margin-top: 6vh;
+  padding: 12px;
   width: 100px;
 }
 
+.accordion-title {
+  font-size: 26px;
+  margin-bottom: 1vh;
+  width: 90%;
+}
+
+.accordion-text {
+  padding-bottom: 5vh;
+  width: 90%;
+}
+
 .active, .accordion-btn:hover {
-  background-color: rgb(40, 40, 121);
+  background-color: mediumslateblue;
+  color: white;
 }
 
 .panel {
@@ -178,6 +268,7 @@ p {
 .info-btn {
   background: indianred;
   border: none;
+  border-radius: 4px;
   color: white;
   padding-bottom: 2vh;
   padding-top: 2vh;
@@ -188,13 +279,18 @@ p {
   color: white;
   display: flex;
   flex-direction: column;
-  padding-bottom: 6vh;
-  padding-top: 6vh;
+  padding-bottom: 10vh;
+  padding-top: 10vh;
   text-align: center;
 }
 
 .info-input {
-  margin-bottom: 2vh;
+  border: none;
+  border-radius: 4px;
+  margin-bottom: 3vh;
+  padding-bottom: 2vh;
+  padding-left: 2vw;
+  padding-top: 2vh;
 }
 
 .info-input-button-wrapper {
@@ -226,6 +322,18 @@ p {
   text-align: center;
 }
 
+.footer-item {
+  padding-bottom: 4vh;
+}
+
+.footer-logo {
+  padding-bottom: 6vh;
+}
+
+.footer-img-two {
+  padding-left: 2vw;
+}
+
 
 
 
@@ -253,11 +361,11 @@ p {
 .navbar {
   margin-bottom: 3vh;
   margin-left: 10vw;
-  margin-right: 20vw;
+  margin-right: 25vw;
   padding-bottom: 6vh;
   padding-left: 0;
   padding-right: 0;
-  padding-top: 3vh;
+  padding-top: 4vh;
 }
 
 
@@ -288,15 +396,31 @@ p {
   display: none;
 }
 
+.bookmark-text {
+  padding-bottom: 1vh;
+  text-align: start;
+  width: 100%;
+}
+
 .bookmark-title {
   font-size: 30px;
+  text-align: start;
 }
 
 /* Features */
-.fetature-btn-container{
-  flex-direction: row;
+.feature-btn {
+  cursor: pointer;
+  margin-right: 3vw;
 }
+
+.fetature-btn-container {
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+
 .feature-container {
+  padding-bottom: 3vh;
   margin-left: 0;
   margin-right: 0;
   margin-top: 0;
@@ -305,13 +429,18 @@ p {
 .feature-text {
   color: gray;
   margin-bottom: 6vh;
-  width: 30%;
+  text-align: center;
+  width: 35%;
 }
 
 
 /* Bookmark oneclick */
 .bookmark-oneclick-btn {
+  background: mediumslateblue;
+  color: white;
+  cursor: pointer;
   display: inline-block;
+  padding: 10px;
 }
 
 .bookmark-oneclick-container {
@@ -329,9 +458,23 @@ p {
 }
 
 .bookmark-oneclick-right {
+  align-items: flex-start;
   display: flex;
   flex-direction: column;
+  margin-bottom: 0;
+  margin-left: 4vw;
+  margin-right: 0;
+  margin-top: 0;
   width: 40%;
+}
+
+.bookmark-oneclick-text {
+  margin-bottom: 5vh;
+  text-align: start;
+}
+
+.bookmark-oneclick-title {
+  margin-bottom: 1vh;
 }
 
 
@@ -339,22 +482,29 @@ p {
 .download-container-bottom {
   display: flex;
   flex-direction: row;
+  width: 75%;
 }
 
 .download-container-item-one, .download-container-item-two {
   margin-right: 4vw;
 }
 
-.download-container-item-one, .download-container-item-two, .download-container-item-three{
-  padding-bottom: 0;
+.download-container-item-one, .download-container-item-two, .download-container-item-three {
+  margin-left: 0;
+  margin-right: 2vw;
+  padding-bottom: 2vh;
 }
 
-.download-container-item-two {
-  margin-top: 6vh;
+/* .download-container-item-two {
+  margin-top: 8vh;
 }
 
 .download-container-item-three {
-  margin-top: 9vh;
+  margin-top: 11vh;
+} */
+
+.download-text {
+  width: 450px;
 }
 
 
@@ -374,23 +524,65 @@ p {
   margin-top: 4vh;
 }
 
+.accordion-text {
+  width: 38%;
+}
+
+/* Info */
+.info-btn {
+  cursor: pointer;
+}
+
 .info-container {
   align-items: center;
   background: blueviolet;
   color: white;
   display: flex;
   flex-direction: column;
-  padding-bottom: 4vh;
-  padding-top: 3vh;
+  padding-bottom: 5vh;
+  padding-top: 5vh;
 }
 
+.info-input {
+  margin-bottom: 0;
+  margin-right: 2vw;
+  padding-bottom: 2vh;
+  padding-left: 1vw;
+  padding-top: 2vh;
+}
+
+.info-input-button-wrapper {
+  flex-direction: row;
+  width: 25%;
+}
+
+/* Footer */
 .footer-container {
-  background: darkblue;
+  background: rgb(135, 135, 216);
   color: white;
   display: flex;
   flex-direction: row;
   padding-bottom: 6vh;
   padding-left: 10vw;
-  padding-top: 4vh;
+  padding-right: 10vw;
+  padding-top: 6vh;
+}
+
+.footer-icon-wrap {
+  margin-left: auto;
+}
+
+.footer-img-two {
+  padding-left: 2vw;
+}
+
+.footer-item {
+  padding-bottom: 0;
+  padding-right: 2vw;
+}
+
+.footer-logo {
+  padding-bottom: 0;
+  padding-right: 2vw;
 }
 }

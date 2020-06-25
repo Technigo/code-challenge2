@@ -18,6 +18,7 @@
 </head>
 <body>
 
+  <!-- Navbar  --------------------------------------------------------------------------->
   <div class="navbar">
     <div class="nav-left">
       <image src="./images/logo-bookmark.svg" />
@@ -31,7 +32,8 @@
       <div class="nav-item">Login</div>
     </div>
   </div>
-
+  
+  <!-- Bookmark --------------------------------------------------------------------------->
   <div class="bookmark-container">
     <div class="bookmark-container-left">
       <image class="bookmark-img-mobile" src="./images/illustration-hero.svg" />
@@ -52,7 +54,7 @@
       </div>
   </div>
 
-
+  <!-- Features --------------------------------------------------------------------------->
   <div class="feature-container">
     <h3 class="feature-title"> Features</h3>
 
@@ -66,6 +68,7 @@
     </div>
   </div>
 
+  <!-- Bookmark oneclick --------------------------------------------------------------------------->
   <div class="bookmark-oneclick-container">
     <div class="bookmark-oneclick-left">
       <image class="bookmark-oneclick-img" src="./images/illustration-features-tab-1.svg" />
@@ -74,7 +77,7 @@
     <div class="bookmark-oneclick-right">
       <h3 class="bookmark-oneclick-title">Bookmark in one click</h3>
 
-      <p>Organize your bookmarks however you like. Our simple drag-and-drop interface 
+      <p class="bookmark-oneclick-text">Organize your bookmarks however you like. Our simple drag-and-drop interface 
         gives you complete control over how you manage your favourite sites.
       </p>
 
@@ -95,11 +98,14 @@
   link that you can send at the click of a button.
 
   More Info -->
+
+
+  <!-- Download  --------------------------------------------------------------------------->
   <div class="download-container">
     <div class="download-container-top">
       <h3 class="download-title">Download the extension</h3>
 
-      <p>We’ve got more browsers in the pipeline. Please do let us know if you’ve 
+      <p class="download-text">We’ve got more browsers in the pipeline. Please do let us know if you’ve 
         got a favourite you’d like us to prioritize.
       </p>
     </div>
@@ -107,7 +113,7 @@
     <div class="download-container-bottom">
       <div class="download-container-item-one">
         <image src="./images/logo-chrome.svg" />
-        <div>Add to Chrome</div>
+        <div class="download-item-title">Add to Chrome</div>
         <p>Minimum version 62</p>
         <image class="download-img-dots" src="./images/bg-dots.svg" />
         <button class="download-btn">Add & Install Extension</button>
@@ -115,7 +121,7 @@
 
       <div class="download-container-item-two">
         <image src="./images/logo-firefox.svg" />
-        <div>Add to Firefox</div>
+        <div class="download-item-title">Add to Firefox</div>
         <p>Minimum version 55</p>
         <image class="download-img-dots" src="./images/bg-dots.svg" />
         <button class="download-btn">Add & Install Extension</button>
@@ -123,7 +129,7 @@
     
       <div class="download-container-item-three">
         <image src="./images/logo-opera.svg" />
-        <div>Add to Opera</div>
+        <div class="download-item-title">Add to Opera</div>
         <p>Minimum version 46</p>
         <image class="download-img-dots" src="./images/bg-dots.svg" />
         <button class="download-btn">Add & Install Extension</button>
@@ -131,16 +137,18 @@
     </div>
   </div>
   
-
+  <!-- FAQ --------------------------------------------------------------------------->
   <section class="accordion">
-    <h3>Frequently Asked Questions</h3>
+    <h3 class="accordion-title">Frequently Asked Questions</h3>
   
-    <p>Here are some of our FAQs. If you have any other questions you’d like 
+    <p class="accordion-text">Here are some of our FAQs. If you have any other questions you’d like 
       answered please feel free to email us.
     </p>
 
   <!-- Question 1 -->
-    <button class="accordion-btn" type="button">What is Bookmark?</button>
+    <button class="accordion-btn" type="button">What is Bookmark?
+      <image class="accordion-btn-arrow" src="./images/icon-arrow.svg" />
+    </button>
 
   <!-- Answer 1 -->
     <div class="panel">
@@ -151,7 +159,9 @@
     </div>
 
   <!-- Question 2 -->
-    <button class="accordion-btn" type="button">How can I request a new browser?</button>
+    <button class="accordion-btn" type="button">How can I request a new browser?
+      <image class="accordion-btn-arrow" src="./images/icon-arrow.svg" />
+    </button>
 
   <!-- Answer 2 -->
     <div class="panel">
@@ -164,7 +174,9 @@
     </div>
 
   <!-- Question 3 -->
-    <button class="accordion-btn" type="button">Is there a mobile app?</button>
+    <button class="accordion-btn" type="button">Is there a mobile app?
+      <image class="accordion-btn-arrow" src="./images/icon-arrow.svg" />
+    </button>
 
   <!-- Answer 3 -->
     <div class="panel">
@@ -176,7 +188,9 @@
     </div>
 
   <!-- Question 4 -->
-    <button class="accordion-btn" type="button">What about other Chromium browsers?</button>
+    <button class="accordion-btn" type="button">What about other Chromium browsers?
+      <image class="accordion-btn-arrow" src="./images/icon-arrow.svg" />
+    </button>
 
   <!-- Answer 4 -->
     <div class="panel">
@@ -189,8 +203,9 @@
     <button class="accordion-moreinfo-btn">More Info</button>
   </section>
 
+  <!-- Info --------------------------------------------------------------------------->
   <div class="info-container">
-    <div class="info-text-one">35,000+ already joined</div>
+    <div class="info-text-one">35,000 + ALREADY JOINED</div>
 
     <div class="info-text-two">Stay up-to-date with what we’re doing</div>
     <div class="info-input-button-wrapper">
@@ -199,22 +214,25 @@
     </div>
   </div>
 
+  <!-- Footer --------------------------------------------------------------------------->
   <div class="footer-container">
-    <div><image class="footer-logo" src="./images/logo-bookmark.svg" /></div>
-    <div>Features</div>
-    <div>Pricing</div>
-    <div>Contact</div>
+    <div class="footer-logo"><image class="footer-logo-img" src="./images/logo-bookmark.svg" /></div>
+    <div class="footer-item">FEATURES</div>
+    <div class="footer-item">PRICING</div>
+    <div class="footer-item">CONTACT</div>
     <div class="footer-icon-wrap">
-      <image src="./images/icon-facebook.svg"/>
-      <image src="./images/icon-twitter.svg" />
+      <image class="footer-img-one" src="./images/icon-facebook.svg"/>
+      <image class="footer-img-two" src="./images/icon-twitter.svg" />
     </div>
   </div>
   
   <footer>
     <p class="attribution">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Your Name Here</a>.
+      Coded by <a href="#">Michel Elmoznino Laufer</a>.
     </p>
   </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
