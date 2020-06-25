@@ -35,8 +35,13 @@
   
   <!-- Bookmark --------------------------------------------------------------------------->
   <div class="bookmark-container">
+
     <div class="bookmark-container-left">
-      <image class="bookmark-img-mobile" src="./images/illustration-hero.svg" />
+      <div class="bookmark-mobile-wrapper">
+        <image class="bookmark-img-mobile" src="./images/illustration-hero.svg" />
+        <div class="bookmark-background-mobile"></div>
+      </div>
+
       <h2 class="bookmark-title">A Simple Bookmark Manager</h2>
 
       <p class="bookmark-text">A clean and simple interface to organize your favourite websites. Open a new 
@@ -50,7 +55,8 @@
     </div>
       
       <div class="bookmark-container-right">
-        <image class="bookmark-img" src="./images/illustration-hero.svg" />
+        <div><image class="bookmark-img" src="./images/illustration-hero.svg" /></div>
+        <div class="bookmark-background"></div>
       </div>
   </div>
 
@@ -62,7 +68,7 @@
       Your bookmarks sync between your devices so you can access them on the go.
     </p>
     <div class="fetature-btn-container">
-      <button class="feature-btn">Simple Bookmarking</button>
+      <button class="feature-btn" onclick="simpleBookmarking()">Simple Bookmarking</button>
       <button class="feature-btn">Speedy Searching</button>
       <button class="feature-btn">Easy Sharing</button>
     </div>
@@ -209,7 +215,7 @@
 
     <div class="info-text-two">Stay up-to-date with what we’re doing</div>
     <div class="info-input-button-wrapper">
-      <input class="info-input" placeholder="Enter your email address"></input>
+      <input class="info-input" placeholder="Enter your email address" required></input>
       <button class="info-btn">Contact Us</button>
     </div>
   </div>

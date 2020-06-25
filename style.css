@@ -2,23 +2,14 @@ p {
   color: grey;
 }
 
-/* Navbar */
-.nav-item {
-  display: none; 
-} 
-
-.navbar {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  padding-bottom: 8vh;
-  padding-left: 3vw;
-  padding-right: 5vw;
-  padding-top: 6vh;
+/* Bookmark ***********************************************************/
+.bookmark-background-mobile {
+  background: mediumslateblue;
+  border-radius: 70% 0% 0% 70%;
+  height: 200px;
+  width: 300px;
 }
 
-
-/* Bookmark */
 .bookmark-btn {
   background: white;
   border: none;
@@ -32,6 +23,7 @@ p {
   color: white;
   cursor: pointer;
 }
+
 .bookmark-btn:hover {
   background: mediumslateblue;
   color: white;
@@ -47,14 +39,26 @@ p {
   width: 90%;
 }
 
+.bookmark-container-right {
+  display: flex;
+  flex-direction: row;
+}
+
 .bookmark-img {
   display: none;
+  position: absolute;
 }
 
 .bookmark-img-mobile {
   margin-left: 3vw;
   margin-top: 2vh;
+  position: absolute;
   width: 90%;
+}
+
+.bookmark-mobile-wrapper {
+  display: flex;
+  flex-direction: column;
 }
 
 .bookmark-text {
@@ -69,46 +73,7 @@ p {
   text-align: center;
 }
 
-/* Features */
-.feature-btn {
-  background: white;
-  border: none;
-  border-radius: 4px;
-  box-shadow: 1px 2px gainsboro;
-  margin-bottom: 1vh;
-  padding: 12px;
-}
-
-.fetature-btn-container {
-  display: flex;
-  flex-direction: column;
-  width: 90%;
-}
-
-.feature-container {
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 6vh;
-  margin-left: 3vw;
-  margin-right: 3vw;
-  margin-top: 20vh;
-}
-
-.feature-text {
-  color: gray;
-  margin-left: 6vw;
-  margin-right: 6vw;
-  padding-bottom: 3vh;
-  text-align: center;
-}
-
-.feature-title {
-  font-size: 26px;
-  margin-bottom: 1vh;
-}
-
-/* Bookmark oneclick */
+/* Bookmark oneclick ***********************************************************/
 .bookmark-oneclick-btn {
   border-radius: 4px;
   display: none;
@@ -137,7 +102,7 @@ p {
   font-size: 26px;
 }
 
-/* Download */
+/* Download ***********************************************************/
 .download-btn {
   background: mediumslateblue;
   border-radius: 4px;
@@ -183,7 +148,7 @@ p {
   font-size: 26px;
 }
 
-/* FAQ */
+/* FAQ ***********************************************************/
 .accordion {
   display: flex;
   flex-direction: column;
@@ -264,7 +229,79 @@ p {
   font-family: Calibri, 'Trebuchet MS', sans-serif;
 }
 
-/* Info */
+/* Features ***********************************************************/
+.feature-btn {
+  background: white;
+  border: none;
+  border-radius: 4px;
+  box-shadow: 1px 2px gainsboro;
+  margin-bottom: 1vh;
+  padding: 12px;
+}
+
+.fetature-btn-container {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+}
+
+.feature-container {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 6vh;
+  margin-left: 3vw;
+  margin-right: 3vw;
+  margin-top: 20vh;
+}
+
+.feature-text {
+  color: gray;
+  margin-left: 6vw;
+  margin-right: 6vw;
+  padding-bottom: 3vh;
+  text-align: center;
+}
+
+.feature-title {
+  font-size: 26px;
+  margin-bottom: 1vh;
+}
+
+/* Footer ***********************************************************/
+.footer-container {
+  align-items: center;
+  background: rgb(135, 135, 216);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 3vh;
+  padding-top: 3vh;
+  text-align: center;
+}
+
+.footer-item {
+  padding-bottom: 4vh;
+}
+
+.footer-logo {
+  padding-bottom: 6vh;
+}
+
+.footer-logo {
+  fill: white;
+  stroke: white;
+}
+.footer-logo-img {
+  fill: white;
+  stroke: white;
+}
+
+.footer-img-two {
+  padding-left: 2vw;
+}
+
+/* Info ***********************************************************/
 .info-btn {
   background: indianred;
   border: none;
@@ -310,66 +347,31 @@ p {
   padding-bottom: 2vh;
 }
 
-/* Footer */
-.footer-container {
-  align-items: center;
-  background: rgb(135, 135, 216);
-  color: white;
+/* Navbar ***********************************************************/
+.nav-item {
+  display: none; 
+} 
+
+.navbar {
   display: flex;
-  flex-direction: column;
-  padding-bottom: 3vh;
-  padding-top: 3vh;
-  text-align: center;
-}
-
-.footer-item {
-  padding-bottom: 4vh;
-}
-
-.footer-logo {
-  padding-bottom: 6vh;
-}
-
-.footer-img-two {
-  padding-left: 2vw;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-bottom: 8vh;
+  padding-left: 3vw;
+  padding-right: 5vw;
+  padding-top: 6vh;
 }
 
 
 
 
-
-
-/* MEDIA QUERIES ************************************************/
+/* MEDIA QUERIES ********************************************************/
 @media(min-width: 768px) {
-/* Navbar */
-.hamburger-menu {
+  /* Bookmark ***********************************************************/
+.bookmark-background-mobile {
   display: none;
 }
 
-.nav-item {
-  color: darkslategrey;
-  display: inline-block;
-  margin-left: 3vw;
-}
-
-.nav-right {
-  display: flex;
-  flex-direction: row;
-  margin-left: auto;
-}
-
-.navbar {
-  margin-bottom: 3vh;
-  margin-left: 10vw;
-  margin-right: 25vw;
-  padding-bottom: 6vh;
-  padding-left: 0;
-  padding-right: 0;
-  padding-top: 4vh;
-}
-
-
-/* Bookmark */
 .bookmark-container {
   display: flex;
   flex-direction: row;
@@ -396,6 +398,10 @@ p {
   display: none;
 }
 
+.bookmark-mobile-wrapper {
+  display: inline-block;
+}
+
 .bookmark-text {
   padding-bottom: 1vh;
   text-align: start;
@@ -407,34 +413,7 @@ p {
   text-align: start;
 }
 
-/* Features */
-.feature-btn {
-  cursor: pointer;
-  margin-right: 3vw;
-}
-
-.fetature-btn-container {
-  flex-direction: row;
-  justify-content: center;
-  width: 100%;
-}
-
-.feature-container {
-  padding-bottom: 3vh;
-  margin-left: 0;
-  margin-right: 0;
-  margin-top: 0;
-}
-
-.feature-text {
-  color: gray;
-  margin-bottom: 6vh;
-  text-align: center;
-  width: 35%;
-}
-
-
-/* Bookmark oneclick */
+/* Bookmark oneclick ***********************************************************/
 .bookmark-oneclick-btn {
   background: mediumslateblue;
   color: white;
@@ -477,8 +456,7 @@ p {
   margin-bottom: 1vh;
 }
 
-
-/* Download */
+/* Download ***********************************************************/
 .download-container-bottom {
   display: flex;
   flex-direction: row;
@@ -507,8 +485,7 @@ p {
   width: 450px;
 }
 
-
-/* FAQ */
+/* FAQ ***********************************************************/
 .accordion {
   align-items: center;
   display: flex;
@@ -528,35 +505,33 @@ p {
   width: 38%;
 }
 
-/* Info */
-.info-btn {
+/* Features ***********************************************************/
+.feature-btn {
   cursor: pointer;
+  margin-right: 3vw;
 }
 
-.info-container {
-  align-items: center;
-  background: blueviolet;
-  color: white;
-  display: flex;
-  flex-direction: column;
-  padding-bottom: 5vh;
-  padding-top: 5vh;
-}
-
-.info-input {
-  margin-bottom: 0;
-  margin-right: 2vw;
-  padding-bottom: 2vh;
-  padding-left: 1vw;
-  padding-top: 2vh;
-}
-
-.info-input-button-wrapper {
+.fetature-btn-container {
   flex-direction: row;
-  width: 25%;
+  justify-content: center;
+  width: 100%;
 }
 
-/* Footer */
+.feature-container {
+  padding-bottom: 3vh;
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 0;
+}
+
+.feature-text {
+  color: gray;
+  margin-bottom: 6vh;
+  text-align: center;
+  width: 35%;
+}
+
+/* Footer ***********************************************************/
 .footer-container {
   background: rgb(135, 135, 216);
   color: white;
@@ -584,5 +559,60 @@ p {
 .footer-logo {
   padding-bottom: 0;
   padding-right: 2vw;
+}
+
+/* Info ***********************************************************/
+.info-btn {
+  cursor: pointer;
+}
+
+.info-container {
+  align-items: center;
+  background: blueviolet;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 5vh;
+  padding-top: 5vh;
+}
+
+.info-input {
+  margin-bottom: 0;
+  margin-right: 2vw;
+  padding-bottom: 2vh;
+  padding-left: 1vw;
+  padding-top: 2vh;
+}
+
+.info-input-button-wrapper {
+  flex-direction: row;
+  width: 25%;
+}
+
+/* Navbar ***********************************************************/
+.hamburger-menu {
+  display: none;
+}
+
+.nav-item {
+  color: darkslategrey;
+  display: inline-block;
+  margin-left: 3vw;
+}
+
+.nav-right {
+  display: flex;
+  flex-direction: row;
+  margin-left: auto;
+}
+
+.navbar {
+  margin-bottom: 3vh;
+  margin-left: 10vw;
+  margin-right: 25vw;
+  padding-bottom: 6vh;
+  padding-left: 0;
+  padding-right: 0;
+  padding-top: 4vh;
 }
 }
