@@ -7,3 +7,42 @@ function myFunction() {
 		x.style.display = "block";
 	}
 }
+
+// A function that adds and remove the class "active" on the section you click on.
+// console.log(this) to see how it works
+function toggle() {
+	this.classList.toggle("active")
+}
+// Selects an HTML element, and calls a function which will be executed when the element is clicked.
+document.getElementById("question1").onclick = toggle
+
+
+
+document.getElementById("question2").onclick = toggle
+
+
+
+document.getElementById("question3").onclick = toggle
+
+
+
+document.getElementById("question4").onclick = toggle
+
+
+// // A function that adds and remove the class "active" on the section you click on.
+// function moreInfoToggle() {
+// 	console.log(moreInfoToggle)
+// 	this.classList.toggle("active")
+// }
+// // Selects an HTML element, and calls a function which will be executed when the element is clicked.
+// document.getElementById("moreInfoAnswer").onclick = moreInfoToggle
+
+
+function moreInfoFunction() {
+	var x = document.getElementById('moreInfo');
+	if (x.style.display === 'none') {
+		x.style.display = 'block';
+	} else {
+		x.style.display = 'none';
+	}
+}
