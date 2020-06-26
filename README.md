@@ -2,7 +2,7 @@
 
 A landing page built with html and some javascript, styled with CSS.
 
-As a part of a Code challange through the frontend mentor page.
+As a part of a Code challenge through the Frontend mentor page.
 https://www.frontendmentor.io/challenges/bookmark-landing-page-5d0b588a9edda32581d29158
 
 # Tech:
