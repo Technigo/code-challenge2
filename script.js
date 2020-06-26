@@ -1,3 +1,4 @@
+// FAQ
 var acc = document.getElementsByClassName("accordion-btn");
 var i;
 

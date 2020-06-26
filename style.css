@@ -4,30 +4,27 @@ p {
 
 /* Bookmark ***********************************************************/
 .bookmark-background-mobile {
-  background: mediumslateblue;
+  background: hsl(230, 70%, 62%);
   border-radius: 70% 0% 0% 70%;
   height: 200px;
   width: 300px;
 }
 
-.bookmark-btn {
-  background: white;
-  border: none;
+.bookmark-btn-chrome, .bookmark-btn-firefox {
   border-radius: 4px;
   box-shadow: 1px 2px gainsboro;
   padding: 8px;
 }
 
-.bookmark-btn:active {
-  background: mediumslateblue;
+.bookmark-btn-chrome {
+  background: hsl(230, 70%, 62%);
+  border-color: hsl(230, 70%, 62%);
   color: white;
-  cursor: pointer;
 }
 
-.bookmark-btn:hover {
-  background: mediumslateblue;
-  color: white;
-  cursor: pointer;
+.bookmark-btn-firefox {
+  background: white;
+  border-color: white;
 }
 
 .bookmark-container-left {
@@ -104,9 +101,11 @@ p {
 
 /* Download ***********************************************************/
 .download-btn {
-  background: mediumslateblue;
+  background: hsl(230, 70%, 62%);
+  border-color: hsl(230, 70%, 62%);
   border-radius: 4px;
   color: white;
+  cursor: pointer;
   font-size: 16px;
   padding: 10px;
 }
@@ -161,8 +160,8 @@ p {
 }
 
 .accordion h1 {
-  text-align: center;
   color: white;
+  text-align: center;
 }
 
 .accordion-btn {
@@ -174,7 +173,7 @@ p {
   display: flex;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 16px;
-  /* border-block-end-style: groove; */
+  border-block-end-style: groove;
   outline: none;
   padding-bottom: 10px;
   padding-left: 0;
@@ -189,7 +188,8 @@ p {
 
 .accordion-moreinfo-btn {
   align-self: center;
-  background: mediumslateblue;
+  background: hsl(230, 70%, 62%);
+  border-color: hsl(230, 70%, 62%);
   border-radius: 4px;
   color: white;
   cursor: pointer;
@@ -199,44 +199,49 @@ p {
   width: 100px;
 }
 
+.accordion-text {
+  padding-bottom: 5vh;
+  width: 90%;
+}
+
 .accordion-title {
   font-size: 26px;
   margin-bottom: 1vh;
   width: 90%;
 }
 
-.accordion-text {
-  padding-bottom: 5vh;
-  width: 90%;
-}
-
 .active, .accordion-btn:hover {
-  background-color: mediumslateblue;
+  background-color: hsl(230, 70%, 62%);
   color: white;
 }
 
 .panel {
+  margin: 0 auto; 
+  margin-left: 0;
   max-height: 0;
   overflow: hidden;
-  margin: 0 auto; 
   transition: max-height .2s ease-out;
-  margin-left: 0;
 }
 
 .panel p {
-  padding-left: 0px;
-  margin-left: 0px;
   font-family: Calibri, 'Trebuchet MS', sans-serif;
+  margin-left: 0px;
+  padding-left: 0px;
 }
 
 /* Features ***********************************************************/
-.feature-btn {
+.feature-btn, .feature-btn-first {
   background: white;
   border: none;
   border-radius: 4px;
   box-shadow: 1px 2px gainsboro;
   margin-bottom: 1vh;
   padding: 12px;
+}
+
+.feature-btn-first {
+  border-bottom: solid;
+  border-color: crimson;
 }
 
 .fetature-btn-container {
@@ -312,7 +317,7 @@ p {
 }
 
 .info-container {
-  background: mediumslateblue;
+  background: hsl(230, 70%, 62%);
   color: white;
   display: flex;
   flex-direction: column;
@@ -352,6 +357,10 @@ p {
   display: none; 
 } 
 
+.nav-login-btn {
+  display: none;
+}
+
 .navbar {
   display: flex;
   flex-direction: row;
@@ -366,10 +375,25 @@ p {
 
 
 /* MEDIA QUERIES ********************************************************/
+/************************************************************************/
 @media(min-width: 768px) {
   /* Bookmark ***********************************************************/
 .bookmark-background-mobile {
   display: none;
+}
+
+.bookmark-btn-chrome:active, .bookmark-btn-chrome:hover {
+  background: white;
+  border-color: hsl(230, 70%, 62%);
+  color: hsl(230, 70%, 62%);
+  cursor: pointer;
+}
+
+.bookmark-btn-firefox:active, .bookmark-btn-firefox:hover {
+  background: white;
+  border-color: darkslategrey;
+  color: darkslategrey;
+  cursor: pointer;
 }
 
 .bookmark-container {
@@ -415,7 +439,8 @@ p {
 
 /* Bookmark oneclick ***********************************************************/
 .bookmark-oneclick-btn {
-  background: mediumslateblue;
+  background: hsl(230, 70%, 62%);
+  border-color: hsl(230, 70%, 62%);
   color: white;
   cursor: pointer;
   display: inline-block;
@@ -457,6 +482,12 @@ p {
 }
 
 /* Download ***********************************************************/
+.download-btn:active, .download-btn:hover {
+  background: white;
+  border-color: hsl(230, 70%, 62%);
+  color: hsl(230, 70%, 62%);
+}
+
 .download-container-bottom {
   display: flex;
   flex-direction: row;
@@ -497,6 +528,11 @@ p {
   width: 40%;
 }
 
+.accordion-btn:hover {
+  background: white;
+  color: crimson;
+}
+
 .accordion-moreinfo-btn {
   margin-top: 4vh;
 }
@@ -505,10 +541,25 @@ p {
   width: 38%;
 }
 
+.panel {
+  margin-left: 25vw;
+  text-align: center;
+  width: 38%;
+}
+
+.panel p {
+  text-align: center;
+}
+
 /* Features ***********************************************************/
-.feature-btn {
+.feature-btn, .feature-btn-first {
   cursor: pointer;
   margin-right: 3vw;
+}
+
+.feature-btn:active, .feature-btn:hover,
+.feature-btn-first:active, .feature-btn-first:hover {
+  color: crimson;
 }
 
 .fetature-btn-container {
@@ -551,9 +602,21 @@ p {
   padding-left: 2vw;
 }
 
+.footer-img-one:active, .footer-img-one:hover,
+.footer-img-two:active, .footer-img-two:hover
+{
+  color: crimson;
+  cursor: pointer;
+}
+
 .footer-item {
   padding-bottom: 0;
   padding-right: 2vw;
+}
+
+.footer-item:active, .footer-item:hover {
+  color: crimson;
+  cursor: pointer;
 }
 
 .footer-logo {
@@ -566,9 +629,16 @@ p {
   cursor: pointer;
 }
 
+.info-btn:active, .info-btn:hover {
+  background: white;
+  border: solid;
+  border-color: crimson;
+  color: crimson;
+}
+
 .info-container {
   align-items: center;
-  background: blueviolet;
+  background: hsl(230, 70%, 62%);
   color: white;
   display: flex;
   flex-direction: column;
@@ -596,8 +666,33 @@ p {
 
 .nav-item {
   color: darkslategrey;
+  cursor: pointer;
   display: inline-block;
   margin-left: 3vw;
+  margin-top: 10px;
+}
+
+.nav-item:active, .nav-item:hover {
+  color: crimson;
+}
+
+.nav-login-btn {
+  background: crimson;
+  border-color: crimson;
+  border-radius: 6px;
+  color: white;
+  cursor: pointer;
+  display: inline-block;
+  margin-left: 3vw;
+  padding: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.nav-login-btn:active, .nav-login-btn:hover {
+  background: white;
+  border-color: crimson;
+  color: crimson;
 }
 
 .nav-right {

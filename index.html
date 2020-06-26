@@ -10,14 +10,13 @@
 
   <link rel="stylesheet" href="style.css" />
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
   </style>
 </head>
-<body>
 
+<body>
   <!-- Navbar  --------------------------------------------------------------------------->
   <div class="navbar">
     <div class="nav-left">
@@ -29,7 +28,7 @@
       <div class="nav-item">Features</div>
       <div class="nav-item">Pricing</div>
       <div class="nav-item">Contact</div>
-      <div class="nav-item">Login</div>
+      <div><button class="nav-login-btn">Login</button></div>
     </div>
   </div>
   
@@ -49,8 +48,8 @@
       </p>
  
       <div class="bookmark-btn-container">
-        <button class="bookmark-btn">Get it on Chrome</button>
-        <button class="bookmark-btn">Get it on Firefox</button>
+        <button class="bookmark-btn-chrome">Get it on Chrome</button>
+        <button class="bookmark-btn-firefox">Get it on Firefox</button>
       </div>
     </div>
       
@@ -68,7 +67,7 @@
       Your bookmarks sync between your devices so you can access them on the go.
     </p>
     <div class="fetature-btn-container">
-      <button class="feature-btn" onclick="simpleBookmarking()">Simple Bookmarking</button>
+      <button class="feature-btn-first" onclick="simpleBookmarking()">Simple Bookmarking</button>
       <button class="feature-btn">Speedy Searching</button>
       <button class="feature-btn">Easy Sharing</button>
     </div>
