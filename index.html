@@ -4,24 +4,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- displays site properly based on user's device -->
   <link rel="stylesheet" href="style.css" />
-  <!-- <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png"> -->
   <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <title>Bookmark landing page</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution {
-      font-size: 11px;
-      text-align: center;
-    }
 
-    .attribution a {
-      color: hsl(228, 45%, 44%);
-    }
-  </style>
 </head>
 
 <body>
@@ -103,7 +91,7 @@
         </div>
       </div>
 
-      <div class='more-info'>
+      <div class='more-info' id='moreInfo'>
         <h4>Intelligent search</h4>
 
         <h5>Our powerful search feature will help you find saved sites in no time at all.
@@ -219,10 +207,10 @@
 
     <h2>Stay up-to-date with what we’re doing</h2>
     <!-- form -->
-    <div class='email'>
-      <input type='email' name='' id='' placeholder='Enter your email adress'>
-      <button class='red-btn'>Contact Us</button>
-    </div>
+    <form class='email'>
+      <input type='email' name='email' id='email' placeholder='Enter your email adress' required>
+      <button class='red-btn' type='submit'>Contact Us</button>
+    </form>
   </section>
 
 

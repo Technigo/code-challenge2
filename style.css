@@ -157,6 +157,10 @@ main {
 	z-index: 1;
 }
 
+main .hero-img {
+	left: 300px;
+}    
+
 /* .hero-container {
 	position: relative;
 } */
@@ -169,7 +173,7 @@ main {
 	border-bottom-left-radius: 58px;
 	z-index: -1;
 	position: absolute;
-	bottom: 299px;
+	top: 189px;
 	right: 0px;
 	margin-right: 0;
 }
@@ -241,13 +245,18 @@ main {
   text-align: center;
 	/* padding: 15px;
 	margin: 0px; */
-	width: 80%;
+	/* width: 80%; */
+}
+
+ul {
+	padding: 0;
 }
 
 ul:hover {
 	display: flex;
   flex-direction: column;
-  text-align: center;
+	text-align: center;
+	color:#fa5757; ;
 	border-bottom: 4px solid #fa5757;
 	width: auto;
 	padding: 0;
@@ -263,6 +272,7 @@ ul:hover {
 .click-img {
 	margin-bottom: 60px;
 	z-index: 1;
+	left: 21px;
 }
 
 .background-shape-reverse {
@@ -273,7 +283,7 @@ ul:hover {
   z-index: -1;
   position: absolute;
   left: 0;
-	top: 1232px;
+	top: 1032px;
   margin-left: 0;
 }
 
@@ -376,14 +386,40 @@ ul:hover {
 	border-bottom: 1px solid lightgray;
 }
 
+.accordion-container h4 {
+	color: black;
+}
+
+.accordion-container h4:hover {
+	color: hsl(0, 94%, 66%);
+}
+
+
 .accordion-container button {
+	fill: none;
+	stroke: #5267DF; 
+	stroke-width: 3;
 	width: auto;
+	transform: rotate(0deg);
 }
 
 .accordion-container button:focus {
-	stroke: red;  /*color change isnt working*/
+	stroke: #fa5757; /*color change isnt working */ 
 	transform: rotate(180deg);
+
+}  
+
+#arrow {
+	stroke: #fa5757;
 }
+
+
+
+/* This rotate the arrow and it rotates back imideate*/
+/* .active + .accordion-container button:active {
+	transform: rotate(180deg);
+
+}   */
 
 /* .red-arrow {
 	display: none;
@@ -395,6 +431,8 @@ ul:hover {
 
 .active + .answer {
 	display: block;
+	transition: all 200ms linear;
+	/* add transition */
 }
 
 .Contact {
@@ -433,9 +471,24 @@ footer {
 	justify-content: space-between;
 	background-color: hsl(229, 31%, 21%);
 	color: white;
-	margin: 0;
+	/* margin: 0; */
 	height: 350px;
 	padding-top: 20px;
+}
+
+.footer-container {
+	display: flex;
+  flex-direction: column;
+    /* text-align: center; */
+  height: inherit;
+}
+
+.footer-info {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	height: 60%;
+	justify-content: space-between;
 }
 
 footer a {
@@ -444,6 +497,15 @@ footer a {
 
 footer img {
 	margin: 15px;
+}
+
+footer .social-media {
+	margin-top: 15px;
+}
+
+.attribution {
+	font-size: 11px;
+	text-align: center;
 }
 
 /***** mobile ******/
@@ -482,11 +544,17 @@ h5 {
 .topnav #myLinks {
 	display: flex;
 	flex-direction: row;
+	height: fit-content;
+	align-items: center;
 	background-color: inherit;
 }
 
 .topnav a {
 	color: black;
+}
+
+.topnav a:hover {
+	color: hsl(0, 94%, 66%);
 }
 
 .topnav a.icon {
@@ -499,6 +567,13 @@ h5 {
 
 .log-in {
 	background-color: hsl(0, 94%, 66%);
+}
+
+.log-in:hover, .red-btn:hover {
+	background-color: white;
+	border: 1.5px solid hsl(0, 94%, 66%);
+	color: hsl(0, 94%, 66%);
+	border-radius: 5px;
 }
 
 .active {
@@ -537,6 +612,20 @@ main {
 	width: 150px;
 }
 
+.btn-container .blue-btn:hover, .card-section .blue-btn:hover {
+	background-color: white;
+	border: 1.5px solid hsl(231, 69%, 60%);
+	border-radius: 5px;
+	color: hsl(231, 69%, 60%);
+}
+
+.btn-container .gray-btn:hover {
+	background-color: white;
+	border: 1.5px solid gray;
+	border-radius: 5px;
+	color: black;
+}
+
 .features {
 	display: flex;
   flex-direction: column;
@@ -561,6 +650,8 @@ main {
 	justify-content: space-between;
 	height: 620px;
 	margin-top: 150px;
+	margin-bottom: 120px;
+	height: auto;
 }
 
 .click-container {
@@ -571,15 +662,18 @@ main {
 }
 
 .click-img {
-	width: 500px;
-  left: 110px;
+	/* width: 500px;
+	left: 110px; */
+	left: 9%;
+  width: 45%;
 }
 
 .click-text {
 	display: flex;
 	flex-direction: column;
-	width: 500px;
-	margin: 200px;
+	/* width: 500px; */
+	width: 40%;
+	margin-right: 4%;
 	text-align: left;
 	align-items: baseline;
 }
@@ -603,13 +697,15 @@ main {
 	padding: 45px;
 	border-radius: 10px;
 	width: 620px;
+	margin-top: 50px;
 }
 
 .background-shape-reverse {
 	width: 533px;
 	height: 317px;
-	border-bottom-right-radius: 116px;
+	border-bottom-right-radius: 151px;
 	top: 1305px;
+	/* top: 1194px; */
 }
 
 .download-section {
@@ -640,8 +736,8 @@ main {
 
 .QA-section {
 	width: 600px;
-	margin-right: 20%;
-	margin-left: 20%;
+	margin-right: 25%;
+	margin-left: 25%;
 	margin-top: 200px;
 }
 
@@ -674,13 +770,23 @@ footer {
 
 .footer-info {
 	display: flex;
+	flex-direction: row;
   width: 650px;
   align-items: center;
   justify-content: space-around;
 }
 
+.footer-info a:hover {
+color: hsl(0, 94%, 66%);
+}
+
 .social-media {
 	display: flex;
+}
+
+/*not working*/
+.social-media a:hover {
+	fill: hsl(0, 94%, 66%);
 }
 
 .attribution {
