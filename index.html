@@ -67,13 +67,15 @@
       Your bookmarks sync between your devices so you can access them on the go.
     </p>
     <div class="fetature-btn-container">
-      <button class="feature-btn-first" onclick="simpleBookmarking()">Simple Bookmarking</button>
-      <button class="feature-btn">Speedy Searching</button>
-      <button class="feature-btn">Easy Sharing</button>
+      <div data-tab-target="#simple" class="feature-btn-first">Simple Bookmarking</div>
+      <div data-tab-target="#speedy" class="feature-btn">Speedy Searching</div>
+      <div data-tab-target="#easy" class="feature-btn">Easy Sharing</div>
     </div>
   </div>
 
+  <div class="tab-content">
   <!-- Bookmark oneclick --------------------------------------------------------------------------->
+  <div id="simple" data-tab-content class="active">
   <div class="bookmark-oneclick-container">
     <div class="bookmark-oneclick-left">
       <image class="bookmark-oneclick-img" src="./images/illustration-features-tab-1.svg" />
@@ -89,21 +91,47 @@
       <button class="bookmark-oneclick-btn">More Info</button>
     </div>
   </div>
+  </div>
 
-  <!-- Intelligent search
+  <!-- Intelligent search --------------------------------------------------------------------------->
+  <div id="speedy" data-tab-content>
+  <div class="bookmark-oneclick-container">
+    <div class="bookmark-oneclick-left">
+      <image class="bookmark-oneclick-img" src="./images/illustration-features-tab-2.svg" />
+    </div>
 
-  Our powerful search feature will help you find saved sites in no time at all. 
-  No need to trawl through all of your bookmarks.
+    <div class="bookmark-oneclick-right">
+      <h3 class="bookmark-oneclick-title">Intelligent search</h3>
 
-  More Info
+      <p class="bookmark-oneclick-text">Our powerful search feature will help you find saved sites in no time at all. 
+        No need to trawl through all of your bookmarks.
+      </p>
 
-  Share your bookmarks
-
-  Easily share your bookmarks and collections with others. Create a shareable 
-  link that you can send at the click of a button.
-
-  More Info -->
-
+      <button class="bookmark-oneclick-btn">More Info</button>
+    </div>
+  </div>
+  </div>
+  
+  <!-- Share your bookmarks ------------------------------------------------------------------->
+  <div id="easy" data-tab-content>
+    <div class="bookmark-oneclick-container">
+      <div class="bookmark-oneclick-left">
+        <image class="bookmark-oneclick-img" src="./images/illustration-features-tab-3.svg" />
+      </div>
+  
+      <div class="bookmark-oneclick-right">
+        <h3 class="bookmark-oneclick-title">Share your bookmarks</h3>
+  
+        <p class="bookmark-oneclick-text">Easily share your bookmarks and collections with others. Create a shareable 
+          link that you can send at the click of a button.
+        </p>
+  
+        <button class="bookmark-oneclick-btn">More Info</button>
+      </div>
+    </div>
+    </div>
+  
+  </div>
 
   <!-- Download  --------------------------------------------------------------------------->
   <div class="download-container">

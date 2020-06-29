@@ -96,6 +96,7 @@ p {
 }
 
 .bookmark-oneclick-title {
+  color: black;
   font-size: 26px;
 }
 
@@ -230,11 +231,22 @@ p {
 }
 
 /* Features ***********************************************************/
+[data-tab-content] {
+  background: white;
+  display: none;
+}
+
+.active[data-tab-content] {
+  background: white;
+  display: block;
+}
+
 .feature-btn, .feature-btn-first {
   background: white;
   border: none;
   border-radius: 4px;
   box-shadow: 1px 2px gainsboro;
+  color: black;
   margin-bottom: 1vh;
   padding: 12px;
 }
@@ -553,6 +565,7 @@ p {
 
 /* Features ***********************************************************/
 .feature-btn, .feature-btn-first {
+  color: black;
   cursor: pointer;
   margin-right: 3vw;
 }
