@@ -32,11 +32,6 @@ h5 {
 }
 
 /**** Header ******/
-/* header {
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
-} */
 
 /* Style the navigation menu */
 .topnav {
@@ -54,10 +49,7 @@ h5 {
 .topnav #myLinks {
 	display: none;
 	background-color: #34495E ;
-	/* display: flex;
-	flex-direction: column; */
 	height: 300px;
-
 }
 
 .topnav #myLinks:active {
@@ -94,12 +86,7 @@ h5 {
   top: 0;
 }
 
-/* .fa {
-	/* content: "\f0c9"; */
-	/* color: black;
-} */ 
-
-/* hamburger after click should hide */
+/* hamburger after click -> should hide */
 .hamburger::after {
 	display: none;
 }
@@ -111,11 +98,6 @@ h5 {
 .close #myLinks:active {
 	display: block;
 }
-/* not working */
-/* .fa::after {
-	/* content: "\f0c9"; */
-	/* color: white;
-}	  */
 
 button {
 	background-color: initial;
@@ -125,7 +107,6 @@ button {
 	border: 1px solid white;
 	justify-content: center;
 }
-
 
 /* Add a grey background color on mouse-over */
 /* .topnav a:hover {
@@ -148,7 +129,6 @@ main {
 	margin-top: 60px;
 	display: flex;
 	flex-direction: column;
-	/* align-items: center; */
 }
 
 .hero-container {
@@ -164,15 +144,6 @@ main {
 	height: auto;
 	z-index: 1;
 }
-
-/* main .hero-img {
-	right: 20%;
-  left: 7%;
-}     */
-
-/* .hero-container {
-	position: relative;
-} */
 
 .background-shape {
 	min-height: 185px;
@@ -191,10 +162,6 @@ main {
 
 .text-container {
 	margin-top: 270px;
-	/* display: flex;
-  flex-direction: column;
-  text-align: center;
-  width: 100%; */
 }
 
 .btn-container {
@@ -254,9 +221,6 @@ main {
 	display: flex;
   flex-direction: column;
   text-align: center;
-	/* padding: 15px;
-	margin: 0px; */
-	/* width: 80%; */
 }
 
 ul {
@@ -274,7 +238,6 @@ ul:hover {
 }
 
 /******** Click ***********/
-
 .click-section {
 	margin-top: 50px;
   margin-bottom: 100px;
@@ -321,7 +284,6 @@ ul:hover {
 	display: none;
 }
 
-/*same as answer*/
 .more-info {
 	display: none;
 }
@@ -329,14 +291,6 @@ ul:hover {
 .moreInfo + .more-info {
 	display: block;
 }
-/* .answer {
-	display: none;
-}
-
-.active + .answer {
-	display: block;
-} */
-
 
 .card-section {
 	display: flex;
@@ -413,7 +367,6 @@ ul:hover {
 	color: hsl(0, 94%, 66%);
 }
 
-
 .accordion-container button {
 	fill: none;
 	stroke: #5267DF; 
@@ -437,12 +390,7 @@ ul:hover {
 /* This rotate the arrow and it rotates back imideate*/
 /* .active + .accordion-container button:active {
 	transform: rotate(180deg);
-
 }   */
-
-/* .red-arrow {
-	display: none;
-} */
 
 .answer {
 	display: none;
@@ -450,8 +398,8 @@ ul:hover {
 
 .active + .answer {
 	display: block;
-	transition: all 200ms linear;
-	/* add transition */
+	transition: all 200ms linear; /* not working*/
+
 }
 
 .Contact {
@@ -490,7 +438,6 @@ footer {
 	justify-content: space-between;
 	background-color: hsl(229, 31%, 21%);
 	color: white;
-	/* margin: 0; */
 	height: 350px;
 	padding-top: 20px;
 }
@@ -498,7 +445,6 @@ footer {
 .footer-container {
 	display: flex;
   flex-direction: column;
-    /* text-align: center; */
   height: inherit;
 }
 
@@ -646,269 +592,258 @@ footer .social-media {
 		display: none;
 	}
 
+	main {
+		flex-direction: row;
+		margin-top: 0;
+	}
 
-main {
-	flex-direction: row;
-	margin-top: 0;
-}
+	.background-shape {
+		width: 345px;
+		min-height: unset;
+		height: 225px;
+  	border-top-left-radius: 117px;
+		border-bottom-left-radius: 117px;
+		top: 269px;
+	}
 
-.background-shape {
-	width: 345px;
-	min-height: unset;
-	height: 225px;
-  border-top-left-radius: 117px;
-	border-bottom-left-radius: 117px;
-	top: 269px;
-}
-
-.hero-img {
-	width: 396px;
-	/* height: auto; */
-	right: 9px;
-	top: 193px;
-}
+	.hero-img {
+		width: 396px;
+		right: 9px;
+		top: 193px;
+	}
 
 
-.text-container {
-	display: flex;
-  flex-direction: column;
-	width: 300px;
-	margin-left: 87px;
-	margin-top: 0;
-}
+	.text-container {
+		display: flex;
+ 	 flex-direction: column;
+		width: 300px;
+		margin-left: 87px;
+		margin-top: 0;
+	}
 
-.btn-container button {
-	width: 134px;
-}
+	.btn-container button {
+		width: 134px;
+	}
 }
 
 
 /***** Desktop *****/
 /* @media (min-width: 1440px){ */
 @media (min-width: 1024px){
-h1 {
-	margin-bottom: 0;
-	font-size: 2.7em;
-	
-	margin-top: 100px;
-}	
+	h1 {
+		margin-bottom: 0;
+		font-size: 2.7vw;
+		margin-top: 100px;
+	}	
 
-h2 {
-	font-size: 1.9em;
-}
-h5 {
-	font-size: 1.3em;
-}	
+	h2 {
+		font-size: 1.9em;
+	}
+	h5 {
+		font-size: 1.3em;
+	}	
 
-.topnav {
-	padding: 0 150px;
-}
+	.topnav {
+		padding: 0 150px;
+	}
 
-.hero-img {
-	width: 583px;
-  /* height: auto; */
- 	right: 82px;
-	top: 193px;
-}
+	.topnav .social-media {
+		display: none;
+	}
 
-.background-shape {
-	height: 299px;
-	top: 325px;
-}
+	.hero-img {
+		min-width: unset;
+		width: 408px;
+	 	right: 82px;
+		top: 193px;
+	}
 
-.text-container {
-	width: 570px;
-	margin-left: 150px;
-	margin-top: 0;
-}
+	.background-shape {
+		height: 250px;
+		top: 273px;
+	}
 
-.btn-container button {
-	width: 150px;
-}
+	.text-container {
+		max-width: 492px;
+		width: 37%;
+		margin-left: 150px;
+		margin-top: 0;
+	}
 
-.btn-container .blue-btn:hover, .card-section .blue-btn:hover {
-	background-color: white;
-	border: 1.5px solid hsl(231, 69%, 60%);
-	border-radius: 5px;
-	color: hsl(231, 69%, 60%);
-}
+	.btn-container button {
+		width: 150px;
+	}
 
-.btn-container .gray-btn:hover {
-	background-color: white;
-	border: 1.5px solid gray;
-	border-radius: 5px;
-	color: black;
-}
+	.btn-container .blue-btn:hover, .card-section .blue-btn:hover {
+		background-color: white;
+		border: 1.5px solid hsl(231, 69%, 60%);
+		border-radius: 5px;
+		color: hsl(231, 69%, 60%);
+	}
 
-.features {
-	display: flex;
-  flex-direction: column;
-  margin-top: 190px;
-  width: 600px;
-  margin-right: 0px;
-  margin-left: 25%;
-}
-.ul-div {
-	display: flex;
-	flex-direction: row;
-	width: 700px;
-	border-bottom: 0.8px solid gray;
-}
+	.btn-container .gray-btn:hover {
+		background-color: white;
+		border: 1.5px solid gray;
+		border-radius: 5px;
+		color: black;
+	}
 
-.ul-border-3 {
-	border-bottom: none;
-}
+	.features {
+		display: flex;
+  	flex-direction: column;
+  	margin-top: 190px;
+  	width: 600px;
+  	margin-right: 20%; /*having problems with this margin*/
+  	margin-left: 20%;
+	}
+	.ul-div {
+		display: flex;
+		flex-direction: row;
+		width: 700px;
+		border-bottom: 0.8px solid gray;
+	}
 
-.click-section {
-	flex-direction: column;
-	justify-content: space-between;
-	height: 620px;
-	margin-top: 150px;
-	margin-bottom: 120px;
-	height: auto;
-}
+	.ul-border-3 {
+		border-bottom: none;
+	}
 
-.click-container {
-	display: flex;
-  flex-direction: row;
-  width: 100%;
-  justify-content: space-between;
-}
+	.click-section {
+		height: auto;
+		flex-direction: row;
+		margin-top: 150px;
+		margin-bottom: 120px;
+		height: auto;
+	}
 
-.click-img {
-	/* width: 500px;
-	left: 110px; */
-	left: 9%;
-  width: 45%;
-}
+	.click-container {
+	  width: 100%;
+		justify-content: space-between;
+	}
 
-.click-text {
-	display: flex;
-	flex-direction: column;
-	/* width: 500px; */
-	width: 40%;
-	margin-right: 4%;
-	text-align: left;
-	align-items: baseline;
-}
+	.click-img {
+		left: 9%;
+	  width: 37%;
+	}
 
-.click-section .blue-btn {
-	display: block;
-	width: 100px;
-}
+	.click-text {
+		display: flex;
+		flex-direction: column;
+		width: 40%;
+		margin-right: 4%;
+		text-align: left;
+		align-items: baseline;
+		margin-top: 0px;
+	}
 
-/* .more-info {
-	display: none;
-}
+	.click-section .blue-btn {
+		display: block;
+		width: 100px;
+	}
 
-.active + .more-info {
-	display: block;
-	width: 620px;
-} */
+	#moreInfo {
+		border: 1px solid black;
+		padding: 45px;
+		border-radius: 10px;
+		width: 620px;
+		margin-top: 50px;
+	}
 
-#moreInfo {
-	border: 1px solid black;
-	padding: 45px;
-	border-radius: 10px;
-	width: 620px;
-	margin-top: 50px;
-}
+	.background-shape-reverse {
+		width: 40%;
+		min-height: 247px;
+		height: 24%;
+		border-bottom-right-radius: 151px;
+		top: 1181px;
+	}
 
-.background-shape-reverse {
-	width: 533px;
-	height: 317px;
-	border-bottom-right-radius: 151px;
-	top: 1305px;
-	/* top: 1194px; */
-}
+	.download-section {
+		margin-top: 250px;
+	}
 
-.download-section {
-	margin-top: 200px;
-}
+	.download-section h5 {
+		width: 620px;
+	}
 
-.download-section h5 {
-	width: 620px;
-}
+	.card-section {
+		flex-direction: row;
+		justify-content: center;
+	}
 
-.card-section {
-	flex-direction: row;
-	justify-content: center;
-}
+	.card-1, .card-2, .card-3 {
+		width: 290px;
+		margin: 0 20px;
+	}
 
-.card-1, .card-2, .card-3 {
-	width: 290px;
-	margin: 0 20px;
-}
+	.card-2 {
+		margin-top: 100px;
+	}
 
-.card-2 {
-	margin-top: 100px;
-}
+	.card-3 {
+		margin-top: 200px;
+	}
 
-.card-3 {
-	margin-top: 200px;
-}
+	.QA-section {
+		width: 600px;
+		margin-right: 20%; /*problems with center the QA section*/
+		margin-left: 20%;
+		margin-top: 200px;
+	}
 
-.QA-section {
-	width: 600px;
-	margin-right: 25%;
-	margin-left: 25%;
-	margin-top: 200px;
-}
+	.email {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		margin: 40px 0 10px 0;
+	}
 
-.email {
-	display: flex;
-  flex-direction: row;
-	align-items: center;
-	margin: 40px 0 10px 0;
-}
+	.red-btn {
+		width: 135px;
+		margin-left: 12px;
+	}
 
-.red-btn {
-	width: 135px;
-	margin-left: 12px;
-}
+	input {
+		margin: 0;
+	}
 
-input {
-	margin: 0;
-}
+	footer {
+		height: 90px;
+	}
 
-footer {
-	height: 90px;
-}
+	.footer-container {
+		display: flex;
+		flex-direction: row;
+		width: 80%;
+		justify-content: space-between;
+		align-items: center;
+	}
 
-.footer-container {
-	display: flex;
-	flex-direction: row;
-	width: 80%;
-  justify-content: space-between;
-}
+	.footer-info {
+		display: flex;
+		flex-direction: row;
+		width: 650px;
+		align-items: center;
+		justify-content: space-around;
+	}
 
-.footer-info {
-	display: flex;
-	flex-direction: row;
-  width: 650px;
-  align-items: center;
-  justify-content: space-around;
-}
+	.footer-info a:hover {
+	color: hsl(0, 94%, 66%);
+	}
 
-.footer-info a:hover {
-color: hsl(0, 94%, 66%);
-}
+	.social-media {
+		display: flex;
+	}
 
-.social-media {
-	display: flex;
-}
+	/*not working*/
+	.social-media a:hover {
+		fill: hsl(0, 94%, 66%);
+	}
 
-/*not working*/
-.social-media a:hover {
-	fill: hsl(0, 94%, 66%);
-}
-
-.attribution {
-	display: flex;	
-	align-self: flex-end;
-	margin: 0 10% 0 0;
-	color: white
-}
+	.attribution {
+		display: flex;	
+		align-self: flex-end;
+		margin: 0 10% 0 0;
+		color: white
+	}
 
 }
  
