@@ -63,6 +63,7 @@ p {
 
 .bookmark-text {
   color: gray;
+  line-height: 1.5rem;
   padding-bottom: 3vh;
   text-align: center;
   width: 80%;
@@ -157,6 +158,7 @@ p {
 }
 
 .download-text {
+  line-height: 1.5rem;
   margin-bottom: 10vh;
   margin-left: 10vw;
   margin-right: 10vw;
@@ -186,8 +188,6 @@ p {
 .accordion-btn {
   align-items: flex-start;
   background: white;
-  /* border-radius: 4px;
-  border-width: thin; */
   border-bottom: 0.5px solid lightgray;
   border-left: none;
   border-right: none;
@@ -196,7 +196,6 @@ p {
   display: flex;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 16px;
-  /* border-block-end-style: groove; */
   outline: none;
   padding-bottom: 10px;
   padding-left: 1vw;
@@ -224,6 +223,7 @@ p {
 }
 
 .accordion-text {
+  line-height: 1.5rem;
   padding-bottom: 5vh;
   width: 90%;
 }
@@ -297,6 +297,7 @@ p {
 
 .feature-text {
   color: gray;
+  line-height: 1.5rem;
   margin-left: 6vw;
   margin-right: 6vw;
   padding-bottom: 3vh;
@@ -368,6 +369,7 @@ p {
   padding-bottom: 2vh;
   padding-left: 2vw;
   padding-top: 2vh;
+  width: 240px;
 }
 
 .info-input-button-wrapper {
@@ -556,7 +558,9 @@ p {
 }
 
 .bookmark-oneclick-text {
+  line-height: 1.5rem;
   margin-bottom: 5vh;
+  margin-right: 7vw;
   text-align: start;
 }
 
@@ -582,18 +586,19 @@ p {
 }
 
 .download-container-item-one, .download-container-item-two, .download-container-item-three {
+  height: 70%;
   margin-left: 0;
   margin-right: 2vw;
   padding-bottom: 2vh;
 }
 
-/* .download-container-item-two {
-  margin-top: 8vh;
+.download-container-item-two {
+  padding-top: 8vh;
 }
 
 .download-container-item-three {
-  margin-top: 11vh;
-} */
+  padding-top: 16vh;
+}
 
 .download-text {
   width: 450px;
@@ -740,7 +745,7 @@ p {
 
 .info-input-button-wrapper {
   flex-direction: row;
-  width: 25%;
+  width: 30%;
 }
 
 /* Navbar ***********************************************************/

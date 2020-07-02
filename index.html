@@ -256,8 +256,18 @@
 
     <div class="info-text-two">Stay up-to-date with what we’re doing</div>
     <div class="info-input-button-wrapper">
-      <input class="info-input" placeholder="Enter your email address" required></input>
-      <button class="info-btn">Contact Us</button>
+      <form id="form" action="#">
+          <div class="inputBox">
+            <input 
+              class="info-input" 
+              type="text" 
+              name="" 
+              placeholder="Enter your email address" 
+            >
+              <span id="text"></span>
+          </div>
+      </form>
+      <button class="info-btn" onclick="validation()">Contact Us</button>
     </div>
   </div>
 
