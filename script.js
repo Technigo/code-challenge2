@@ -33,3 +33,15 @@ tabs.forEach(tab => {
     target.classList.add('active')
   })
 })
+
+
+// Navbar
+// Hamburger Menu
+function myFunction() {
+  var x = document.getElementById("hamburgerMenu");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block"
+  }
+} 

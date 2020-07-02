@@ -7,6 +7,8 @@ p {
   background: hsl(230, 70%, 62%);
   border-radius: 70% 0% 0% 70%;
   height: 200px;
+  margin-left: 20vw;
+  margin-top: 14vh;
   width: 300px;
 }
 
@@ -48,14 +50,15 @@ p {
 
 .bookmark-img-mobile {
   margin-left: 3vw;
-  margin-top: 2vh;
+  margin-top: 4vh;
   position: absolute;
-  width: 90%;
+  width: 90vw;
 }
 
 .bookmark-mobile-wrapper {
   display: flex;
   flex-direction: column;
+  margin-bottom: 5vh;
 }
 
 .bookmark-text {
@@ -71,6 +74,15 @@ p {
 }
 
 /* Bookmark oneclick ***********************************************************/
+.bookmark-oneclick-background {
+  background: hsl(230, 70%, 62%);
+  border-radius: 0% 70% 70% 0%;
+  margin-left: 0;
+  margin-top: 10vh;
+  height: 40vh;
+  width: 80vw;
+}
+
 .bookmark-oneclick-btn {
   border-radius: 4px;
   display: none;
@@ -85,7 +97,13 @@ p {
 
 .bookmark-oneclick-img {
   margin-left: 3vw;
+  position: absolute;
   width: 90%;
+}
+
+.bookmark-oneclick-left {
+  display: flex;
+  flex-direction: row;
 }
 
 .bookmark-oneclick-right {
@@ -168,16 +186,21 @@ p {
 .accordion-btn {
   align-items: flex-start;
   background: white;
-  border-radius: 4px;
-  border-width: thin;
+  /* border-radius: 4px;
+  border-width: thin; */
+  border-bottom: 0.5px solid lightgray;
+  border-left: none;
+  border-right: none;
+  border-top: 0.5px solid lightgray;
   cursor: pointer;
   display: flex;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 16px;
-  border-block-end-style: groove;
+  /* border-block-end-style: groove; */
   outline: none;
   padding-bottom: 10px;
-  padding-left: 0;
+  padding-left: 1vw;
+  padding-top: 6px;
   text-align: left;
   width: 100%;
 }
@@ -310,8 +333,8 @@ p {
   stroke: white;
 }
 .footer-logo-img {
-  fill: white;
-  stroke: white;
+  /* filter: brightness(0) invert(1); */
+  /* filter: invert(90%) sepia(23%) saturate(6245%) hue-rotate(163deg) brightness(97%) contrast(101%); */
 }
 
 .footer-img-two {
@@ -365,6 +388,10 @@ p {
 }
 
 /* Navbar ***********************************************************/
+#hamburgerMenu {
+  display: inline-block;
+}
+
 .nav-item {
   display: none; 
 } 
@@ -383,13 +410,48 @@ p {
   padding-top: 6vh;
 }
 
+.nav-right {
+  display: none;
+}
+
+.nav-right-mobile {
+  overflow: hidden;
+  position: relative;
+}
+
+.nav-right-mobile a {
+  display: none;
+}
+
+/* .nav-right-mobile a {
+
+} */
+
+.nav-right-mobile a.icon {
+  background: white;
+  color: black;
+  display: block;
+  left: 0;
+  position: absolute;
+  right: 0;
+}
+
 
 
 
 /* MEDIA QUERIES ********************************************************/
 /************************************************************************/
 @media(min-width: 768px) {
-  /* Bookmark ***********************************************************/
+/* Bookmark ***********************************************************/
+.bookmark-background {
+  background: hsl(230, 70%, 62%);
+  border-radius: 70% 0% 0% 70%;
+  margin-left: 14vw;
+  margin-top: 14vh;
+  height: 35vh;
+  width: 25vw;
+}
+
 .bookmark-background-mobile {
   display: none;
 }
@@ -450,6 +512,15 @@ p {
 }
 
 /* Bookmark oneclick ***********************************************************/
+.bookmark-oneclick-background {
+  background: hsl(230, 70%, 62%);
+  border-radius: 0% 70% 70% 0%;
+  margin-right: 10vw;
+  margin-top: 10vh;
+  height: 40vh;
+  width: 30vw;
+}
+
 .bookmark-oneclick-btn {
   background: hsl(230, 70%, 62%);
   border-color: hsl(230, 70%, 62%);
@@ -468,7 +539,7 @@ p {
 }
 
 .bookmark-oneclick-img {
-  margin-left: 0;
+  margin-left: 4vw;
   margin-right: 3vw;
   width: 400px;
 }
@@ -673,7 +744,7 @@ p {
 }
 
 /* Navbar ***********************************************************/
-.hamburger-menu {
+#hamburgerMenu {
   display: none;
 }
 
@@ -712,6 +783,10 @@ p {
   display: flex;
   flex-direction: row;
   margin-left: auto;
+}
+
+.nav-right-mobile {
+  display: none;
 }
 
 .navbar {
