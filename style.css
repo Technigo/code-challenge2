@@ -1,0 +1,806 @@
+p {
+  color: grey;
+}
+
+/* Bookmark ***********************************************************/
+.bookmark-background-mobile {
+  background: hsl(230, 70%, 62%);
+  border-radius: 70% 0% 0% 70%;
+  height: 200px;
+  margin-left: 20vw;
+  margin-top: 14vh;
+  width: 300px;
+}
+
+.bookmark-btn-chrome, .bookmark-btn-firefox {
+  border-radius: 4px;
+  box-shadow: 1px 2px gainsboro;
+  padding: 8px;
+}
+
+.bookmark-btn-chrome {
+  background: hsl(230, 70%, 62%);
+  border-color: hsl(230, 70%, 62%);
+  color: white;
+}
+
+.bookmark-btn-firefox {
+  background: white;
+  border-color: white;
+}
+
+.bookmark-container-left {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin-left: 3vw;
+  margin-right: 3vw;
+  width: 90%;
+}
+
+.bookmark-container-right {
+  display: flex;
+  flex-direction: row;
+}
+
+.bookmark-img {
+  display: none;
+  position: absolute;
+}
+
+.bookmark-img-mobile {
+  margin-left: 3vw;
+  margin-top: 4vh;
+  position: absolute;
+  width: 90vw;
+}
+
+.bookmark-mobile-wrapper {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 5vh;
+}
+
+.bookmark-text {
+  color: gray;
+  line-height: 1.5rem;
+  padding-bottom: 3vh;
+  text-align: center;
+  width: 80%;
+}
+
+.bookmark-title {
+  font-size: 26px;
+  text-align: center;
+}
+
+/* Bookmark oneclick ***********************************************************/
+.bookmark-oneclick-background {
+  background: hsl(230, 70%, 62%);
+  border-radius: 0% 70% 70% 0%;
+  margin-left: 0;
+  margin-top: 10vh;
+  height: 40vh;
+  width: 80vw;
+}
+
+.bookmark-oneclick-btn {
+  border-radius: 4px;
+  display: none;
+}
+
+.bookmark-oneclick-container {
+  display: flex;
+  flex-direction: column;
+  padding-top: 4vh;
+  text-align: center;
+}
+
+.bookmark-oneclick-img {
+  margin-left: 3vw;
+  position: absolute;
+  width: 90%;
+}
+
+.bookmark-oneclick-left {
+  display: flex;
+  flex-direction: row;
+}
+
+.bookmark-oneclick-right {
+  margin-bottom: 8vh;
+  margin-left: 8vw;
+  margin-right: 10vw;
+  margin-top: 6vh;
+}
+
+.bookmark-oneclick-title {
+  color: black;
+  font-size: 26px;
+}
+
+/* Download ***********************************************************/
+.download-btn {
+  background: hsl(230, 70%, 62%);
+  border-color: hsl(230, 70%, 62%);
+  border-radius: 4px;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 10px;
+}
+
+.download-container {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 5vh;
+  text-align: center;
+}
+
+.download-container-item-one, .download-container-item-two, .download-container-item-three {
+  box-shadow: 1px 2px gainsboro;
+  margin-bottom: 12vh;
+  margin-left: 10vw;
+  margin-right: 10vw;
+  margin-top: 4vh;
+  padding-bottom: 8vh;
+}
+
+.download-img-dots {
+  padding-bottom: 2vh;
+}
+
+.download-item-title {
+  font-size: 20px;
+  font-weight: bold;
+  padding-top: 3vh;
+}
+
+.download-text {
+  line-height: 1.5rem;
+  margin-bottom: 10vh;
+  margin-left: 10vw;
+  margin-right: 10vw;
+}
+
+.download-title {
+  font-size: 26px;
+}
+
+/* FAQ ***********************************************************/
+.accordion {
+  display: flex;
+  flex-direction: column;
+  margin-left: 5vw;
+  padding: 10px;
+  padding-top: 0px;
+  padding-bottom: 12vh;
+  text-align: center;
+  width: 85vw;
+}
+
+.accordion h1 {
+  color: white;
+  text-align: center;
+}
+
+.accordion-btn {
+  align-items: flex-start;
+  background: white;
+  border-bottom: 0.5px solid lightgray;
+  border-left: none;
+  border-right: none;
+  border-top: 0.5px solid lightgray;
+  cursor: pointer;
+  display: flex;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  outline: none;
+  padding-bottom: 10px;
+  padding-left: 1vw;
+  padding-top: 6px;
+  text-align: left;
+  width: 100%;
+}
+
+.accordion-btn-arrow {
+  margin-left: auto;
+  padding-top: 1vh;
+}
+
+.accordion-moreinfo-btn {
+  align-self: center;
+  background: hsl(230, 70%, 62%);
+  border-color: hsl(230, 70%, 62%);
+  border-radius: 4px;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 6vh;
+  padding: 12px;
+  width: 100px;
+}
+
+.accordion-text {
+  line-height: 1.5rem;
+  padding-bottom: 5vh;
+  width: 90%;
+}
+
+.accordion-title {
+  font-size: 26px;
+  margin-bottom: 1vh;
+  width: 90%;
+}
+
+.active, .accordion-btn:hover {
+  background-color: hsl(230, 70%, 62%);
+  color: white;
+}
+
+.panel {
+  margin: 0 auto; 
+  margin-left: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height .2s ease-out;
+}
+
+.panel p {
+  font-family: Calibri, 'Trebuchet MS', sans-serif;
+  margin-left: 0px;
+  padding-left: 0px;
+}
+
+/* Features ***********************************************************/
+[data-tab-content] {
+  background: white;
+  display: none;
+}
+
+.active[data-tab-content] {
+  background: white;
+  display: block;
+}
+
+.feature-btn, .feature-btn-first {
+  background: white;
+  border: none;
+  border-radius: 4px;
+  box-shadow: 1px 2px gainsboro;
+  color: black;
+  margin-bottom: 1vh;
+  padding: 12px;
+}
+
+.feature-btn-first {
+  border-bottom: solid;
+  border-color: crimson;
+}
+
+.fetature-btn-container {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+}
+
+.feature-container {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 6vh;
+  margin-left: 3vw;
+  margin-right: 3vw;
+  margin-top: 20vh;
+}
+
+.feature-text {
+  color: gray;
+  line-height: 1.5rem;
+  margin-left: 6vw;
+  margin-right: 6vw;
+  padding-bottom: 3vh;
+  text-align: center;
+}
+
+.feature-title {
+  font-size: 26px;
+  margin-bottom: 1vh;
+}
+
+/* Footer ***********************************************************/
+.footer-container {
+  align-items: center;
+  background: rgb(135, 135, 216);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 3vh;
+  padding-top: 3vh;
+  text-align: center;
+}
+
+.footer-item {
+  padding-bottom: 4vh;
+}
+
+.footer-logo {
+  padding-bottom: 6vh;
+}
+
+.footer-logo {
+  fill: white;
+  stroke: white;
+}
+.footer-logo-img {
+  /* filter: brightness(0) invert(1); */
+  /* filter: invert(90%) sepia(23%) saturate(6245%) hue-rotate(163deg) brightness(97%) contrast(101%); */
+}
+
+.footer-img-two {
+  padding-left: 2vw;
+}
+
+/* Info ***********************************************************/
+.info-btn {
+  background: indianred;
+  border: none;
+  border-radius: 4px;
+  color: white;
+  padding-bottom: 2vh;
+  padding-top: 2vh;
+}
+
+.info-container {
+  background: hsl(230, 70%, 62%);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 10vh;
+  padding-top: 10vh;
+  text-align: center;
+}
+
+.info-input {
+  border: none;
+  border-radius: 4px;
+  margin-bottom: 3vh;
+  padding-bottom: 2vh;
+  padding-left: 2vw;
+  padding-top: 2vh;
+  width: 240px;
+}
+
+.info-input-button-wrapper {
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  padding-top: 3vh;
+  width: 70%;
+}
+
+.info-text-one {
+  padding-bottom: 2vh;
+}
+
+.info-text-two {
+  font-size: 26px;
+  padding-bottom: 2vh;
+}
+
+/* Navbar ***********************************************************/
+#hamburgerMenu {
+  display: inline-block;
+}
+
+.nav-item {
+  display: none; 
+} 
+
+.nav-login-btn {
+  display: none;
+}
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-bottom: 8vh;
+  padding-left: 3vw;
+  padding-right: 5vw;
+  padding-top: 6vh;
+}
+
+.nav-right {
+  display: none;
+}
+
+.nav-right-mobile {
+  overflow: hidden;
+  position: relative;
+}
+
+.nav-right-mobile a {
+  display: none;
+}
+
+/* .nav-right-mobile a {
+
+} */
+
+.nav-right-mobile a.icon {
+  background: white;
+  color: black;
+  display: block;
+  left: 0;
+  position: absolute;
+  right: 0;
+}
+
+
+
+
+/* MEDIA QUERIES ********************************************************/
+/************************************************************************/
+@media(min-width: 768px) {
+/* Bookmark ***********************************************************/
+.bookmark-background {
+  background: hsl(230, 70%, 62%);
+  border-radius: 70% 0% 0% 70%;
+  margin-left: 14vw;
+  margin-top: 14vh;
+  height: 35vh;
+  width: 25vw;
+}
+
+.bookmark-background-mobile {
+  display: none;
+}
+
+.bookmark-btn-chrome:active, .bookmark-btn-chrome:hover {
+  background: white;
+  border-color: hsl(230, 70%, 62%);
+  color: hsl(230, 70%, 62%);
+  cursor: pointer;
+}
+
+.bookmark-btn-firefox:active, .bookmark-btn-firefox:hover {
+  background: white;
+  border-color: darkslategrey;
+  color: darkslategrey;
+  cursor: pointer;
+}
+
+.bookmark-container {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 6vh;
+  margin-left: 10vw;
+  margin-right: 5vw;
+}
+
+.bookmark-container-left {
+  display: inline-block;
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 6vh;
+  width: 35%;
+}
+
+.bookmark-img {
+  display: inline-block;
+  margin-left: 6vw;
+  width: 400px;
+}
+
+.bookmark-img-mobile {
+  display: none;
+}
+
+.bookmark-mobile-wrapper {
+  display: inline-block;
+}
+
+.bookmark-text {
+  padding-bottom: 1vh;
+  text-align: start;
+  width: 100%;
+}
+
+.bookmark-title {
+  font-size: 30px;
+  text-align: start;
+}
+
+/* Bookmark oneclick ***********************************************************/
+.bookmark-oneclick-background {
+  background: hsl(230, 70%, 62%);
+  border-radius: 0% 70% 70% 0%;
+  margin-right: 10vw;
+  margin-top: 10vh;
+  height: 40vh;
+  width: 30vw;
+}
+
+.bookmark-oneclick-btn {
+  background: hsl(230, 70%, 62%);
+  border-color: hsl(230, 70%, 62%);
+  color: white;
+  cursor: pointer;
+  display: inline-block;
+  padding: 10px;
+}
+
+.bookmark-oneclick-container {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 6vh;
+  margin-left: 10vw;
+  padding-top: 0;
+}
+
+.bookmark-oneclick-img {
+  margin-left: 4vw;
+  margin-right: 3vw;
+  width: 400px;
+}
+
+.bookmark-oneclick-right {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 0;
+  margin-left: 4vw;
+  margin-right: 0;
+  margin-top: 0;
+  width: 40%;
+}
+
+.bookmark-oneclick-text {
+  line-height: 1.5rem;
+  margin-bottom: 5vh;
+  margin-right: 7vw;
+  text-align: start;
+}
+
+.bookmark-oneclick-title {
+  margin-bottom: 1vh;
+}
+
+/* Download ***********************************************************/
+.download-btn:active, .download-btn:hover {
+  background: white;
+  border-color: hsl(230, 70%, 62%);
+  color: hsl(230, 70%, 62%);
+}
+
+.download-container-bottom {
+  display: flex;
+  flex-direction: row;
+  width: 75%;
+}
+
+.download-container-item-one, .download-container-item-two {
+  margin-right: 4vw;
+}
+
+.download-container-item-one, .download-container-item-two, .download-container-item-three {
+  height: 70%;
+  margin-left: 0;
+  margin-right: 2vw;
+  padding-bottom: 2vh;
+}
+
+.download-container-item-two {
+  padding-top: 8vh;
+}
+
+.download-container-item-three {
+  padding-top: 16vh;
+}
+
+.download-text {
+  width: 450px;
+}
+
+/* FAQ ***********************************************************/
+.accordion {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1vh;
+}
+
+.accordion-btn {
+  width: 40%;
+}
+
+.accordion-btn:hover {
+  background: white;
+  color: crimson;
+}
+
+.accordion-moreinfo-btn {
+  margin-top: 4vh;
+}
+
+.accordion-text {
+  width: 38%;
+}
+
+.panel {
+  margin-left: 25vw;
+  text-align: center;
+  width: 38%;
+}
+
+.panel p {
+  text-align: center;
+}
+
+/* Features ***********************************************************/
+.feature-btn, .feature-btn-first {
+  color: black;
+  cursor: pointer;
+  margin-right: 3vw;
+}
+
+.feature-btn:active, .feature-btn:hover,
+.feature-btn-first:active, .feature-btn-first:hover {
+  color: crimson;
+}
+
+.fetature-btn-container {
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+
+.feature-container {
+  padding-bottom: 3vh;
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 0;
+}
+
+.feature-text {
+  color: gray;
+  margin-bottom: 6vh;
+  text-align: center;
+  width: 35%;
+}
+
+/* Footer ***********************************************************/
+.footer-container {
+  background: rgb(135, 135, 216);
+  color: white;
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 6vh;
+  padding-left: 10vw;
+  padding-right: 10vw;
+  padding-top: 6vh;
+}
+
+.footer-icon-wrap {
+  margin-left: auto;
+}
+
+.footer-img-two {
+  padding-left: 2vw;
+}
+
+.footer-img-one:active, .footer-img-one:hover,
+.footer-img-two:active, .footer-img-two:hover
+{
+  color: crimson;
+  cursor: pointer;
+}
+
+.footer-item {
+  padding-bottom: 0;
+  padding-right: 2vw;
+}
+
+.footer-item:active, .footer-item:hover {
+  color: crimson;
+  cursor: pointer;
+}
+
+.footer-logo {
+  padding-bottom: 0;
+  padding-right: 2vw;
+}
+
+/* Info ***********************************************************/
+.info-btn {
+  cursor: pointer;
+}
+
+.info-btn:active, .info-btn:hover {
+  background: white;
+  border: solid;
+  border-color: crimson;
+  color: crimson;
+}
+
+.info-container {
+  align-items: center;
+  background: hsl(230, 70%, 62%);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 5vh;
+  padding-top: 5vh;
+}
+
+.info-input {
+  margin-bottom: 0;
+  margin-right: 2vw;
+  padding-bottom: 2vh;
+  padding-left: 1vw;
+  padding-top: 2vh;
+}
+
+.info-input-button-wrapper {
+  flex-direction: row;
+  width: 30%;
+}
+
+/* Navbar ***********************************************************/
+#hamburgerMenu {
+  display: none;
+}
+
+.nav-item {
+  color: darkslategrey;
+  cursor: pointer;
+  display: inline-block;
+  margin-left: 3vw;
+  margin-top: 10px;
+}
+
+.nav-item:active, .nav-item:hover {
+  color: crimson;
+}
+
+.nav-login-btn {
+  background: crimson;
+  border-color: crimson;
+  border-radius: 6px;
+  color: white;
+  cursor: pointer;
+  display: inline-block;
+  margin-left: 3vw;
+  padding: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.nav-login-btn:active, .nav-login-btn:hover {
+  background: white;
+  border-color: crimson;
+  color: crimson;
+}
+
+.nav-right {
+  display: flex;
+  flex-direction: row;
+  margin-left: auto;
+}
+
+.nav-right-mobile {
+  display: none;
+}
+
+.navbar {
+  margin-bottom: 3vh;
+  margin-left: 10vw;
+  margin-right: 25vw;
+  padding-bottom: 6vh;
+  padding-left: 0;
+  padding-right: 0;
+  padding-top: 4vh;
+}
+}
