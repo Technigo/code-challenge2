@@ -88,7 +88,6 @@ h5 {
 .menu-logo {
   width: fit-content;
   align-self: flex-start;
-  margin-left: 12vw;
 }
 
 .menu-close-btn {
@@ -100,8 +99,13 @@ h5 {
   display: flex;
   flex-direction: row;
   align-items: center;
-  width: 100%;
+  justify-content: space-between;
+  width: 80%;
   margin: 23px 0;
+}
+
+.menu-top img {
+  fill: white;
 }
 
 .menu-mid-section {
